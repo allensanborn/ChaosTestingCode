@@ -1,0 +1,16 @@
+Build the dockerfile to get my lightly modified docker image which includes the the cluster-entrypoint.sh file. for some reason I couldn't get past a permissions issue on the file executing in the container. 
+
+The blockade.yml was modified to take the new garbage name for the container i built. 
+
+I couldn't get blockade to build so I created a container based off of a sample. 
+
+Run pull-containers.sh to pull in the relevant containers. 
+
+
+modify ~/.bashrc to have alias
+
+alias blockade="docker run --rm -v \$PWD:/blockade \
+-v /var/run/docker.sock:/var/run/docker.sock asanborn/blockade"
+
+RabbitMQ-Overview
+https://grafana.com/grafana/dashboards/10991
