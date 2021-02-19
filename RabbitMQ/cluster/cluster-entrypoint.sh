@@ -20,7 +20,7 @@ if [ ! -f is-member-of-cluster.txt ]; then
 
     # Stop the entire RMQ server. This is done so that we
     # can attach to it again, but without the -detached flag
-    # making it run in the forground
+    # making it run in the foreground
     rabbitmqctl stop
 
     # Wait a while for the app to really stop
